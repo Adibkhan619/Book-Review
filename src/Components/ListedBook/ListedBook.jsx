@@ -1,7 +1,7 @@
 import { IoLocationOutline } from "react-icons/io5";
 import { SlPeople } from "react-icons/sl";
-import { FcDocument } from "react-icons/fc";
 import { HiOutlineDocumentDuplicate } from "react-icons/hi2";
+
 
 const ListedBook = ({book}) => {
     const {bookId, bookName, author, image, review, totalPages, rating, category, tags, publisher, yearOfPublishing} = book;

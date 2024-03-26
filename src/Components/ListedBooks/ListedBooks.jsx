@@ -1,23 +1,16 @@
-// import { useLoaderData } from "react-router-dom";
-// import BookDetails from "../BookDetails/BookDetails";
 import { useEffect, useState } from "react";
 import { getDataFromLocalStorage } from "../utility/localStorage";
 import ListedBook from "../ListedBook/ListedBook";
 
 const ListedBooks = () => {
-    
-    // const book = useLoaderData();
-    // console.log(id);
 
     const [listedBooks, setListedBooks] = useState([]);
     console.log(listedBooks);
     useEffect(() => {
         const data = getDataFromLocalStorage();
-        setListedBooks(data);       
+        setListedBooks(data);      
     }, [])
-    
-    
-
+       
     return (
         <div>
             <div className="max-w-full text-center my-10 bg-gray-100 rounded-3xl">
@@ -29,8 +22,6 @@ const ListedBooks = () => {
                 }
             </div>
             <button className="btn">Sort</button>
-
-
         </div>
     );
 };

@@ -9,6 +9,8 @@ import Root from './Components/Root/Root';
 import Home from './Components/Home/Home';
 import BookDetails from './Components/BookDetails/BookDetails';
 import ListedBooks from './Components/ListedBooks/ListedBooks';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const router = createBrowserRouter([
   {
@@ -34,7 +36,7 @@ const router = createBrowserRouter([
   }, 
 ]);
 
-
+<ToastContainer/>
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
