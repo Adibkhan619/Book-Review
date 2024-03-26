@@ -23,7 +23,7 @@ const NavBar = () => {
       <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-gray-600 text-lg font-medium">
 
       <li><NavLink onClick={activate}>Home</NavLink></li>
-      <li><NavLink onClick={activate}>Listed Books</NavLink></li>
+      <li><NavLink to="/listed" onClick={activate}>Listed Books</NavLink></li>
       <li><NavLink onClick={activate}>Pages to Read</NavLink></li>
       
       </ul>
@@ -34,7 +34,7 @@ const NavBar = () => {
     <ul className="menu menu-horizontal px-1 text-gray-600 text-lg font-medium">
       
        <li><NavLink onClick={activate} className={isActive? 'active': ''}>Home</NavLink></li>
-      <li><NavLink onClick={activate}>Listed Books</NavLink></li>
+      <li><NavLink to="/listed" onClick={activate}>Listed Books</NavLink></li>
       <li><NavLink onClick={activate}>Pages to Read</NavLink></li>
       
     </ul>
