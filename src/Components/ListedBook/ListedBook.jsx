@@ -1,10 +1,22 @@
 import { IoLocationOutline } from "react-icons/io5";
 import { SlPeople } from "react-icons/sl";
 import { HiOutlineDocumentDuplicate } from "react-icons/hi2";
+import { useEffect, useState } from "react";
+import { getDataFromLocalStorage } from "../utility/localStorage";
 
 
 const ListedBook = ({book}) => {
-    const {bookId, bookName, author, image, review, totalPages, rating, category, tags, publisher, yearOfPublishing} = book;
+
+    // const [listedBooks, setListedBooks] = useState([]);
+    // console.log(listedBooks);
+    // useEffect(() => {
+    //     const data = getDataFromLocalStorage();
+    //     setListedBooks(data);      
+    // }, [])
+
+
+    const { bookName, author, image, review, totalPages, rating, category, tags, publisher, yearOfPublishing} = book;
+    console.log(book);
     return (
         
         <div className="flex gap-7 border-2 p-5 rounded-2xl my-5 ">

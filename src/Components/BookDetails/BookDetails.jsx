@@ -1,6 +1,6 @@
 
 import { Link, useLoaderData, useParams } from "react-router-dom";
-import { saveDataToLocalStorage } from "../utility/localStorage";
+import { saveDataToLocalStorage, saveDataToLocalStorage2 } from "../utility/localStorage";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -16,6 +16,9 @@ const BookDetails = () => {
 
     const handleReadBtn = () => {
       saveDataToLocalStorage(book);       
+    }
+    const handleWIshlistBtn = () => {
+      saveDataToLocalStorage2(book);       
     }
 
     return (
@@ -56,7 +59,7 @@ const BookDetails = () => {
 
                 <div className="text-lg">
                 <Link><button onClick={handleReadBtn} className="btn border-gray-300 bg-white px-5 mr-3">Read</button></Link>
-                {/* <Link><button onClick={() => } className="btn text-white bg-[#59C6D2]">Wishlist</button></Link> */}               
+                <Link><button onClick={handleWIshlistBtn} className="btn text-white bg-[#59C6D2]">Wishlist</button></Link>               
                 </div>            
             </div> 
             </div>
