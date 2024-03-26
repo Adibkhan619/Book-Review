@@ -2,14 +2,14 @@
 
 const Banner = () => {
     return (
-        <div>
-            <div className="hero rounded-3xl bg-base-200">
-  <div className="hero-content mx-28 my-20  flex-col lg:flex-row-reverse">
-    <img src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" className="max-w-sm rounded-lg shadow-2xl" />
-    <div>
-      <h1 className="text-5xl font-bold play-fair">Books to freshen up your bookshelf</h1>
-    
-      <button className="btn btn-primary">Get Started</button>
+        <div className="my-12 rounded-3xl">
+            <div className=" rounded-3xl bg-base-200">
+  <div className="hero-content rounded-3xl bg-base-200 px-28 py-15  flex-col lg:flex-row-reverse justify-between gap-24">
+    <img src="/hero.png" className="max-w-md bg-base-200 rounded-lg " />
+    <div >
+      <h1 className="text-5xl max-w-[526px] font-bold play-fair">Books to freshen up your bookshelf</h1>
+    <br />
+      <button className="btn bg-[#23BE0A] text-lg font-bold text-white">View The List</button>
     </div>
   </div>
 </div>
