@@ -13,6 +13,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import ListedBook from './Components/ListedBook/ListedBook';
 import Wishlist from './Components/Wishlist/Wishlist';
+import ReadBook from './Components/ReadBook/ReadBook';
 
 const router = createBrowserRouter([
   {
@@ -36,7 +37,8 @@ const router = createBrowserRouter([
         children:[
           {
             path:"readBook",
-            element:<ListedBook></ListedBook>
+            index: true,
+            element:<ReadBook></ReadBook>,
           },
           {
             path: "wishlist",

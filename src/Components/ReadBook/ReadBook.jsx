@@ -1,17 +1,19 @@
 import { useEffect, useState } from "react";
-import { getDataFromLocalStorage2 } from "../utility/localStorage";
+import { getDataFromLocalStorage } from "../utility/localStorage";
 import ListedBook from "../ListedBook/ListedBook";
 
 
-const Wishlist = () => {
-    const [listedBooks, setListedBooks] = useState([]);
+const ReadBook = () => {
+      
+        const [listedBooks, setListedBooks] = useState([]);
 
         useEffect(() => {
-          const data = getDataFromLocalStorage2();
+          const data = getDataFromLocalStorage();
           setListedBooks(data);
         }, []);
       
         console.log(listedBooks);
+
     return (
         <div>
             {listedBooks.map(book => <ListedBook key={book.bookId} book={book}></ListedBook>)}
@@ -19,4 +21,4 @@ const Wishlist = () => {
     );
 };
 
-export default Wishlist;
+export default ReadBook;
