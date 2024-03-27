@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 const NavBar = () => {
   return (
     <div>
-      <div className="navbar bg-base-100">
+      <div className="navbar bg-base-100 mt-7">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -33,7 +33,7 @@ const NavBar = () => {
                 <NavLink to="/listed/readBook">Listed Books</NavLink>
               </li>
               <li>
-                <NavLink>Pages to Read</NavLink>
+                <NavLink to="/pagesToRead">Pages to Read</NavLink>
               </li>
             </ul>
           </div>
@@ -67,7 +67,7 @@ const NavBar = () => {
             </li>
             <li>
               <NavLink
-                to="/"
+                to="/pagesToRead"
                 className={({ isActive }) =>
                   isActive
                     ? "border border-green-300 text-green-400  px-5 py-3 font-semibold rounded-md "

@@ -2,6 +2,7 @@ import { IoLocationOutline } from "react-icons/io5";
 import { SlPeople } from "react-icons/sl";
 import { HiOutlineDocumentDuplicate } from "react-icons/hi2";
 import { Link } from "react-router-dom";
+import PropTypes from 'prop-types'
 // import { useEffect, useState } from "react";
 // import { getDataFromLocalStorage } from "../utility/localStorage";
 // import { useLoaderData, useParams } from "react-router-dom";
@@ -13,7 +14,7 @@ const ListedBook = ({book}) => {
     bookName,
     author,
     image,
-    review,
+    // review,
     totalPages,
     rating,
     category,
@@ -79,4 +80,7 @@ const ListedBook = ({book}) => {
   );
 };
 
+ListedBook.propTypes ={
+    book: PropTypes.object,
+}
 export default ListedBook;

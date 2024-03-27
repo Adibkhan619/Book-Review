@@ -11,9 +11,9 @@ import BookDetails from './Components/BookDetails/BookDetails';
 import ListedBooks from './Components/ListedBooks/ListedBooks';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import ListedBook from './Components/ListedBook/ListedBook';
 import Wishlist from './Components/Wishlist/Wishlist';
 import ReadBook from './Components/ReadBook/ReadBook';
+import PagesToRead from './Components/PagesToRead/PagesToRead';
 
 const router = createBrowserRouter([
   {
@@ -47,7 +47,8 @@ const router = createBrowserRouter([
         ]
       },
       {
-
+        path:"/pagesToRead",
+        element:<PagesToRead></PagesToRead>
       }
     ]
   }, 
