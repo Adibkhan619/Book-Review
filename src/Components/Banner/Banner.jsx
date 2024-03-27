@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
-    <div className="my-12 rounded-3xl">
+    <div className="my-5 rounded-3xl">
       <div className=" rounded-3xl bg-base-200">
         <div className="hero-content rounded-3xl bg-base-200 px-28 py-15  flex-col lg:flex-row-reverse justify-between gap-24">
           <img src="/hero.png" className="max-w-md bg-base-200 rounded-lg " />

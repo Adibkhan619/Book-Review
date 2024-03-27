@@ -23,7 +23,7 @@ const BookDetails = () => {
 
     return (
         <div>
-            <div className="flex gap-12 my-12">
+            <div className="flex gap-12 my-6">
                 <img className="p-20 bg-[#1313130D] rounded-2xl max-w-[480px]" src={image} alt="" />
             <div className="space-y-6">
                 <h1 className="font-bold text-4xl play-fair">{bookName}</h1>

@@ -3,9 +3,6 @@ import { SlPeople } from "react-icons/sl";
 import { HiOutlineDocumentDuplicate } from "react-icons/hi2";
 import { Link } from "react-router-dom";
 import PropTypes from 'prop-types'
-// import { useEffect, useState } from "react";
-// import { getDataFromLocalStorage } from "../utility/localStorage";
-// import { useLoaderData, useParams } from "react-router-dom";
 
 const ListedBook = ({book}) => {
 
@@ -21,15 +18,11 @@ const ListedBook = ({book}) => {
     tags,
     publisher,
     yearOfPublishing,
-  } = book;
-  
-  console.log(book, 'from read');
+  } = book;  
 
   const handleViewDetails = () => {
 
   }
-
-  
   return (
     <div className="flex gap-7 border-2 p-5 rounded-2xl my-5 ">
       <img

@@ -11,7 +11,7 @@ const Wishlist = () => {
           setListedBooks(data);
         }, []);
       
-        console.log(listedBooks);
+        // console.log(listedBooks);
     return (
         <div>
             {listedBooks.map(book => <ListedBook key={book.bookId} book={book}></ListedBook>)}

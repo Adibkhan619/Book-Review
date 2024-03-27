@@ -1,24 +1,11 @@
-import { useEffect, useState } from "react";
-import { getDataFromLocalStorage } from "../utility/localStorage";
-// import ListedBook from "../ListedBook/ListedBook";
+import { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 
 const ListedBooks = () => {
   const [tabIndex, setTabIndex] = useState(1);
 
-  const [listedBooks, setListedBooks] = useState([]);
-
-  useEffect(() => {
-    const data = getDataFromLocalStorage();
-    setListedBooks(data);
-  }, []);
-
-  console.log(listedBooks);
-  //   listedBooks.map(book => <ListedBook key={book.bookId} book={book}></ListedBook>);
-
   return (
     <div>
-      <button className="btn">Sort</button>
       <div className="max-w-full text-center my-10 bg-gray-100 rounded-3xl">
         <h1 className="py-8 font-bold text-3xl">Books</h1>
       </div>
@@ -75,21 +62,7 @@ const ListedBooks = () => {
       </div>
 
       <Outlet></Outlet>
-{/* 
-      {listedBooks.map((book) => (
-        <ListedBook key={book.bookId} book={book}></ListedBook>
-      ))} */}
 
-      {/* <div>
-        {listedBooks.map((book) => (
-          <ListedBook book={book} key={book.bookId}></ListedBook>
-        ))}
-      </div> */}
-      {/* <div>
-                {
-                    listedBooks.map(book => <ListedBook book={book} key={book.bookId}></ListedBook>)
-                }
-            </div> */}
     </div>
   );
 };
